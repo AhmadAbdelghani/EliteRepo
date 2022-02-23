@@ -1,8 +1,11 @@
 package pages;
 
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+
 
 import utilities.Driver;
 
@@ -38,4 +41,7 @@ public class SaveTradePage {
 	
 	@FindBy (linkText = "Back to Transactions")
 	public WebElement backToTransactionsBtn;
+	
+	@FindBy(xpath = "//form[@action='/records/save']")
+	public WebElement tradeValues;
 }

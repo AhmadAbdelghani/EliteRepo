@@ -47,9 +47,22 @@ public class HomePage {
 	@FindBy (linkText  = "Add trade")
 	public  WebElement addTradeBtn;
 	
-	@FindBy (xpath = "//a[@class='btn btn-info btn-sm']")
-	public List <WebElement> updateBtn;
+	@FindBy(xpath = "//table/tbody/tr/td[text()='AhmadDontDelete']/following-sibling::td[6]/a[2]")
+    public WebElement ahmadTradeDelete;
 	
-	@FindBy (xpath = "//a[@class='btn btn-danger btn-sm']")
-	public List <WebElement> deleteBtn;
+	@FindBy(xpath = "//tbody/tr/td")
+	public List<WebElement> UItableRecord;
+	
+	@FindBy(xpath = "//table/tbody/tr/td[text()='AhmadDontDelete']/following-sibling::td[6]/a[1]")
+    public WebElement ahmadTradeUpdate;
+	
+	@FindBy(xpath = "//input[@type='search']")
+	public WebElement searchField;
+	
+	@FindBy(xpath = "//table[@class='table table-bordered table-striped']/tbody/tr/td[2]")
+	public List<WebElement> stockSymbol;
+	
+	
+	@FindBy(xpath = "//a[contains(text(), 'Update')]")
+	public WebElement updateButton;
 }
