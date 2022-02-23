@@ -26,5 +26,6 @@ public class LoginPage {
 
 	@FindBy (xpath = "//div[text()='Bad credentials']")
 	public WebElement badCredentialText;
-
+	
+	
 }
