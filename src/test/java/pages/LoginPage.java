@@ -27,5 +27,13 @@ public class LoginPage {
 	@FindBy (xpath = "//div[text()='Bad credentials']")
 	public WebElement badCredentialText;
 	
+	@FindBy(tagName = "h2")
+	public WebElement areYouSur;
+	
+	@FindBy(xpath = "//button[text()='Log Out']")
+	public WebElement logoutBtn;
+	
+	@FindBy(xpath = "//div[@class='alert alert-success']")
+	public WebElement signedOutText;
 	
 }
