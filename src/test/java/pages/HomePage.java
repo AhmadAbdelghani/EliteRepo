@@ -8,11 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import utilities.Driver;
 
-public class HomePage {
+public class HomePage extends BasePage {
 
-	public HomePage() {
-		PageFactory.initElements(Driver.getDriver(), this);
-	}
+
 	
 	@FindBy (xpath  = "//a[text()='Home ']")
 	public WebElement pageTitle;
@@ -65,4 +63,10 @@ public class HomePage {
 	
 	@FindBy(xpath = "//a[contains(text(), 'Update')]")
 	public WebElement updateButton;
+	
+	@FindBy(xpath = "//tbody/tr/td[2]")
+	public WebElement symbol;
+	
+	@FindBy(xpath = "//tbody/tr/td[4]")
+	public WebElement entryPrice;
 }

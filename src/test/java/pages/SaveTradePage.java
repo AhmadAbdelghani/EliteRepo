@@ -9,11 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import utilities.Driver;
 
-public class SaveTradePage {
+public class SaveTradePage extends BasePage{
 
-	public SaveTradePage() {
-		PageFactory.initElements(Driver.getDriver(), this);
-	}
 	
 	@FindBy (xpath = "//p[@class='h4 mb-4']")
 	public WebElement pageHeading;

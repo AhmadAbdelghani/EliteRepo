@@ -139,7 +139,7 @@ public class loginFeatureSteps {
 	    Assert.assertEquals(lp.signedOutText.getText().trim(), confirmedLodoutMessage);
 		
 	}
-	
+	// test logout #Ends
 	
 	
 	
