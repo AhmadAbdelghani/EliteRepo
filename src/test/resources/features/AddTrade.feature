@@ -1,3 +1,4 @@
+@Regression
 Feature: User should be able to add a trade 
           user can add a valid trade 
           user should not be able to add a trade invalid

@@ -1,3 +1,4 @@
+@Regression
 Feature: User should be able to login to Trade Journal app
         User should not be logged in with invalid credentials
         User should be able to loggin with valid credentioals

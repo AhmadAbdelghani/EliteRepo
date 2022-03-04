@@ -1,3 +1,4 @@
+@Regression
 Feature: Update Trade record 
         User should be able to update existing record 
         
