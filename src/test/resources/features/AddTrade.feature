@@ -3,7 +3,7 @@ Feature: User should be able to add a trade
           user can add a valid trade 
           user should not be able to add a trade invalid
           
-  @AddTradeValid      
+  @AddTradeValid  @SmokeTest    
  Scenario: User should be able to add a trade when provide valid inputs 
  Given User is logged in to Trade Journal app and User is on homepage 
  When User clicks on add trade button 
