@@ -4,7 +4,7 @@ Feature: Update Trade record
         
   
   
-  @ValidUpdateRecordAllFields
+  @ValidUpdateRecordAllFields   @SmokeTest
   Scenario: User should be able to update a record in the table records
   Given User looged in to trade Journal app and on the homepage
   When User creat new record with the following data and 

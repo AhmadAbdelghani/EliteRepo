@@ -3,7 +3,7 @@ Feature: User should be able to login to Trade Journal app
         User should not be logged in with invalid credentials
         User should be able to loggin with valid credentioals
 
-  @LoginValid
+  @LoginValid @SmokeTest
   Scenario Outline: As a user I shpuld be able to login with valid credential
     Given User is on Trade Joiurnal app login page
     When User inters valid username "<username>" and valid password "<password>"
@@ -53,7 +53,7 @@ Feature: User should be able to login to Trade Journal app
       
       
       
-      @LoginInvalid
+      @LoginInvalid  @SmokeTest
       Scenario Outline: User should not be able to log in with inalid username and invalid password 
        Given User is on Trade Joiurnal app login page
        When User enters invalid username "<username>" and invalid password "<password>" into the fields
@@ -69,7 +69,7 @@ Feature: User should be able to login to Trade Journal app
        
        
       
-      @Logout
+      @Logout   @SmokeTest
       Scenario: User should be able to logout from Trade Journal app
       Given User is logged in to Journal app and on the home page 
       When User clicks oon the logout button 
